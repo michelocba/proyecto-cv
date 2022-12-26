@@ -1,0 +1,46 @@
+*{
+  margin: 0 auto;
+  font-family: "Dancing script";
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+header{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(62, 62, 202),rgb(216, 240, 240));
+  color: white;
+  justify-content: space-between;
+  font-style: italic;
+  font-weight: bold;
+  padding-right: 3em;
+}
+header #foto-perfil{
+  border-radius: 10em;
+  padding: 1em;
+  width: 10%;
+}
+header h1{
+  padding-left: 1.5em;
+  font-family: 'Rubik', sans-serif;
+}
+header .redes{
+  width: 25px;
+  padding-top: 5em;
+}
+contacto{
+  padding-left: 15em;
+  color: rgb(12, 99, 84);
+}
+.subrayado{
+  text-decoration: underline;
+}
+.subrayado-double{
+  text-decoration:underline;
+  text-decoration-style: double;
+}
+.pl-5em{
+  padding-left: 5em;
+}
