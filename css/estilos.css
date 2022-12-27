@@ -1,75 +1,131 @@
-*{
+* {
   margin: 0 auto;
   box-sizing: border-box;
   font-family: "Dancing script";
 }
-img{
+
+img {
   max-width: 100%;
   height: auto;
 }
-header{
+
+header {
   position: relative;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(to right, rgb(62, 62, 202),rgb(216, 240, 240));
+  background-image: linear-gradient(to right, rgb(62, 62, 202), rgb(216, 240, 240));
   color: white;
   justify-content: space-between;
   font-style: italic;
   font-weight: bold;
   padding-right: 3em;
 }
-header #foto-perfil{
+
+header #foto-perfil {
   border-radius: 10em;
   padding: 1em;
   width: 10%;
 }
-header h1{
+
+header h1 {
   padding-left: 1.5em;
   font-family: 'Rubik', sans-serif;
 }
-header .redes{
+
+header .redes {
   width: 25px;
   padding-top: 5em;
 }
-contacto{
+
+contacto {
   padding-left: 15em;
   color: rgb(12, 99, 84);
 }
-.subrayado{
+
+.subrayado {
   text-decoration: underline;
 }
-.subrayado-double{
-  text-decoration:underline;
+
+.subrayado-double {
+  text-decoration: underline;
   text-decoration-style: double;
 }
-.pl-5em{
+
+.pl-5em {
   padding-left: 5em;
 }
-.facebook:hover{
+
+.facebook:hover {
   border-bottom: 5px solid rgb(24, 119, 242);
 }
-.instagram:hover{
+
+.instagram:hover {
   border-bottom: 5px solid rgb(254, 143, 88);
 }
-.twitter:hover{
+
+.twitter:hover {
   border-bottom: 5px solid rgb(3, 169, 244);
 }
-.linkedin:hover{
+
+.linkedin:hover {
   border-bottom: 5px solid rgb(0, 122, 185);
 }
-.whatsapp:hover{
+
+.whatsapp:hover {
   border-bottom: 5px solid rgb(43, 168, 28);
 }
-footer{
-  
+
+footer {
   background-color: rgb(81, 136, 136);
   align-items: center;
-  align-content: center;  
+  align-content: center;
   text-align: center;
 }
 
-@media screen and(max-width:400px){
-  header #foto-perfil{
+@media screen and (max-width:1200px) {
+  header #foto-perfil {
+    width: 12%;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  header #foto-perfil {
+    width: 14%;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  header #foto-perfil {
+    width: 16%;
+  }
+}
+
+@media screen and (max-width:900px) {
+  header #foto-perfil {
+    width: 18%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  header #foto-perfil {
     width: 20%;
+  }
+}
+
+@media screen and (max-width:700px) {
+  header #foto-perfil {
+    width: 22%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  header #foto-perfil {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  header #foto-perfil {
+    width: 26%;
   }
 }
