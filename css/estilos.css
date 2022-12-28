@@ -4,6 +4,23 @@
   font-family: "Dancing script";
 }
 
+.pl-1em {
+  padding-left: 1em;
+}
+
+.pl-1-5em {
+  padding-left: 1.5em;
+}
+
+.pl-2em {
+  padding-left: 2em;
+}
+
+.pl-5em {
+  padding-left: 5em;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
@@ -52,14 +69,6 @@ contacto {
 .subrayado-double {
   text-decoration: underline;
   text-decoration-style: double;
-}
-
-.pl-1em {
-  padding-left: 1em;
-}
-
-.pl-5em {
-  padding-left: 5em;
 }
 
 .redes:hover{
