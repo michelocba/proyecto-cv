@@ -4,6 +4,10 @@
   font-family: "Dancing script";
 }
 
+.navbar{
+  background-image: linear-gradient(to right, rgb(63, 63, 231), rgb(109, 179, 179)) !important; 
+}
+
 .pl-1em {
   padding-left: 1em;
 }
