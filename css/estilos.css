@@ -4,8 +4,21 @@
   font-family: "Dancing script";
 }
 
+header{
+  font-family: "Dancing script" !important;
+}
+
 .navbar{
-  background-image: linear-gradient(to right, rgb(63, 63, 231), rgb(109, 179, 179)) !important; 
+  background-image: linear-gradient(to right, rgb(62, 62, 202), rgb(216, 240, 240));
+  border: 0.1em solid white;
+  position: sticky;
+}
+
+header nav{
+  
+  position: absolute;
+  padding-top: 20px;
+  
 }
 
 .pl-1em {
