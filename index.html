@@ -55,37 +55,16 @@
 </head>
 
 <body>
-  <!-- <header>
-    <img id="foto-perfil" src="img/foto-perfil.jpeg" alt="Foto Perfil">
-    <h1>Hector Daniel Micheletti</h1>
-    <contacto>
-      <h3 class="subrayado-double">Contacto</h3>
-      <p><span class="subrayado pl-5em">Dirección</span>: Jose Manuel Estrada 15</p>
-      <p><span class="subrayado pl-5em">Localidad</span>: Huinca Renanco</p>
-      <p><span class="subrayado pl-5em">Teléfono</span>: 2336 - 493097</p>
-      <p><span class="subrayado pl-5em">E-mail</span>: <a href="mailto:hectorcba@gmail.com?
-          &subject=Contacto
-          &body=Me pongo en contacto con Hector Daniel Micheletti">hectorcba@gmail.com</a>
-      </p>
-    </contacto>
-    <img class="redes facebook" src="img/facebook.png" alt="Facebook">
-    <img class="redes instagram" src="img/instagram.png" alt="Instagram">
-    <img class="redes twitter" src="img/twitter.png" alt="Twitter">
-    <img class="redes linkedin" src="img/linkedin.png" alt="LinkedIn">
-    <img class="redes whatsapp" src="img/whatsapp.png" alt="WhatsApp">
-    
-  </header> -->
   <header>
     <!-- foto perfil y datos para el contacto -->
     <div class="container-fluid">
-      <h1 class="text-center text-decoration-underline">Hector Daniel Micheletti</h1>
       <div class="row">
-        <div class="columna col-sm-5 col-md-6 col-lg-7 col-xl-7">
+        <h1 class="h1 text-decoration-underline text-center">Hector Daniel Micheletti</h1>
+        <div class="columna d-flex align-items-center col-sm-5 col-md-6 col-lg-7 col-xl-7">
           <img class="foto-perfil" src="img/foto-perfil.jpeg" alt="Foto de Hector Micheletti">
         </div>
-        <!-- <div class="columna col-sm-1 col-md-2 col-xl-1 col-xxl-2"></div> -->
-        <div class="columna col-sm-7 col-md-6 col-lg-5 col-xl-5">
-          <h3 class="contacto subrayado-double">Contacto</h3>
+        <div id="datos-iniciales" class="columna col-sm-7 col-md-6 col-lg-5 col-xl-5">
+          <h3 class="texto-contacto subrayado-double">Contacto</h3>
           <div class="pl-5em">
             <p><span class="text-decoration-underline">Dirección</span>: Jose Manuel Estrada 15</p>
             <p><span class="text-decoration-underline">Localidad</span>: Huinca Renanco</p>
@@ -96,9 +75,333 @@
             </p>
           </div>
         </div>
+        <!-- iconos redes sociales -->
+        <div class="derecha">
+          <img class="redes facebook" src="img/facebook.png" alt="Facebook">
+          <img class="redes instagram" src="img/instagram.png" alt="Instagram">
+          <img class="redes twitter" src="img/twitter.png" alt="Twitter">
+          <img class="redes linkedin" src="img/linkedin.png" alt="LinkedIn">
+          <img class="redes whatsapp" src="img/whatsapp.png" alt="WhatsApp">
+        </div>
       </div>
-    </div>
+      <!-- barra de navegacion -->
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+          <!-- boton que aparece es dispositivos con viewport pequeño, ej moviles-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+              <img src="img/favicon.ico" height="20px" alt="Logo de la Página Web">
+            </a>
+            <!-- listado del menu -->
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#conoceme">Conoceme</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formacion">Formación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonios">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
   </header>
+  <div id="contenido" class="container-fluid">
+    <!-- seccion conoceme -->
+    <section id="conoceme" class="conoceme seccion-oscura">
+      <div class="contenedor text-center">
+        <h2 class="seccion-titulo">Sobre Hector Micheletti ...</h2>
+        <p class="seccion-texto">
+          Hola, te cuento como fueron mis inicios en la programación, al momento de decidirme sobre que carrera quería
+          hacer tenía muy en claro mi objetivo, pero al analizarlo mejor noté que iba a ser muy costoso (Piloto
+          Comercial), entonces me incliné por mi pasión que es la programación. Luego de un arduo esfuerzo me recibí de
+          Analista de Sistemas de Computación. Actualmente estoy estudiando Desarollo de Páginas Web y Aplicaciones para
+          Dispositivos Móviles
+        </p>
+      </div>
+    </section>
+
+    <!-- seccion formacion -->
+    <section id="formacion" class="formacion seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- desarrollo web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-database-fill-add"></i>
+            <p class="formacion-titulo">Desarrollo Web</p>
+            <p>Al ser desarrollador web es importante tener un panorama global de todo el proyecto, sin perder de vista
+              las reglas del negocio del cliente. Luego se divide en varias etapas hasta lograr el desempeño final.
+            </p>
+            <div class="badges-conteneror">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
+            </div>
+          </div>
+          <!-- administrador de redes -->
+          <div class="columna col-12 col-md-4">
+
+            <i class="bi bi-hdd-network-fill"></i>
+            <p class="formacion-titulo">Administrador Net</p>
+            <p>Se debe tener en cuenta la seguridad y el respaldo de los datos ante cualquier tipo de falla, debiendo
+              interpretar las señales
+              correspondientes. Por ello hay que considerar en plantear la inversión adecuada en caso de ser necesaria.
+            </p>
+            <div class="badges-conteneror">
+              <span class="badge text-bg-primary">Analizar</span>
+              <span class="badge text-bg-primary">Proyectar</span>
+              <span class="badge text-bg-primary">Aplicar</span>
+            </div>
+
+          </div>
+          <!-- estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-book-fill"></i>
+            <p class="formacion-titulo">Estudiantes</p>
+            <p>Si sos estudiante, para poder lograr completar los requerimientos solicitados,
+              es de vital importancia prestar atención a los detalles, principalmente sobre las nuevas tendencias de
+              aplicación.
+            </p>
+            <div class="badges-conteneror">
+              <span class="badge text-bg-primary">freeCodeCamp</span>
+              <span class="badge text-bg-primary">Desarrollo Web</span>
+              <span class="badge text-bg-primary">Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- seccion proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+      <h3 class="seccion-descripcion">Estos son alguno proyectos que he creado recientemente</h2>
+        <!-- galeria de proyectos -->
+        <div class="container text-center proyectos-contenedor">
+          <div class="row">
+            <!-- proyecto 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="img/proyecto-1.jpg" alt="Proyecto 1">
+                <div class="overlay">
+                  <p>Analizando</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://freecodecamp.org/espanol" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-laptop"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- proyecto 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="img/proyecto-2.jpg" alt="Proyecto 1">
+                <div class="overlay">
+                  <p>Diversidad</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://freecodecamp.org/espanol" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-laptop"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- proyecto 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="img/proyecto-3.jpg" alt="Proyecto 1">
+                <div class="overlay">
+                  <p>WebDesign</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://freecodecamp.org/espanol" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-laptop"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- proyecto 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="img/proyecto-4.jpg" alt="Proyecto 1">
+                <div class="overlay">
+                  <p>Ayuda</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://freecodecamp.org/espanol" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-laptop"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- proyecto 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="img/proyecto-5.jpg" alt="Proyecto 1">
+                <div class="overlay">
+                  <p>Documentando</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://freecodecamp.org/espanol" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-laptop"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- proyecto 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="img/proyecto-6.jpg" alt="Proyecto 1">
+                <div class="overlay">
+                  <p>Ciclo</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://freecodecamp.org/espanol" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-laptop"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ver mas proyectos, enlace en boton -->
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <button type="button" class="btn btn-info">
+            Ver mas proyectos ...
+            <i class="bi bi-arrow-right-circle-fill"></i>
+          </button>
+        </a>
+    </section>
+
+    <!-- seccion testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos comentarios de mis amigos</h3>
+
+      <!-- carrusel con testimonios-->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonios-carrusel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonios-carrusel" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#testimonios-carrusel" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- testimonio 1 - Julieta -->
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="img/persona-1.jpg" alt="Foto de Julieta">
+              <p class="testimonio-texto">
+                Trabajo constantemente con Hector, me sirve de mucha ayuda para poder avanzar.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Julieta</p>
+                <p class="cargo">Gerenta de Sistemas</p>
+              </div>
+            </div>
+          </div>
+          <!-- testimonio 2 - Ariel -->
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="img/persona-2.jpg" alt="Foto de Ariel">
+              <p class="testimonio-texto">
+                Un equipo de trabajo formalece las relaciones y los sistemas a desarrollar se logran desde una mejor perpectiva.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Ariel</p>
+                <p class="cargo">Director de Proyectos Web</p>
+              </div>
+            </div>
+          </div>
+          <!-- testimonio 3 - Jose -->
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="img/persona-3.jpg" alt="Foto de Jose">
+              <p class="testimonio-texto">
+                Hoy en día es importante contar con un equipo de trabajo en el cual se puede confiar totalmente.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Jose</p>
+                <p class="cargo">Desarrollador HTML, CSS, Python</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- seccion contacto -->
+    <section class="contacto seccion-oscura">
+      <!-- para utilizar como id del menu -->
+      <span id="contacto">hola</span>
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto de Desarrollo Web y haré que tu visión se vuelva realidad
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:hectorcba@gmail.com">
+                <button type="button">
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  </div>
+  </div>
   <footer>
     <h3>Hector Daniel Micheletti -
       <a href="mailto:hectorcba@gmail.com?
@@ -106,6 +409,8 @@
         &body=Me pongo en contacto con Hector Daniel Micheletti">hectorcba@gmail.com</a>
     </h3>
   </footer>
+  <!-- JS Bootstrap-->
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/funciones.js"></script>
 </body>
 
