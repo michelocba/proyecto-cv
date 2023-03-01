@@ -90,10 +90,6 @@ header h1 {
   padding: 10px;
 }
 
-.columna{
-  border: 1px solid green;
-}
-
 header img {
   max-width: 100%;
   height: auto;
@@ -202,27 +198,6 @@ section {
   margin: 1px;
 }
 
-/* testimonios */
-.testimonios{
-  padding: 40px 40px 80px 40px;
-}
-
-.testimonios .carousel{
-  max-width: 800px;
-}
-
-.carousel-item{
-  height: 500px;
-}
-
-.carousel-item .container{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 /* proyectos */
 .proyectos-recientes{
   padding: 40px;
@@ -240,6 +215,10 @@ section {
 .proyectos-contenedor{
   padding-top: 60px;
   margin-bottom: 40px;
+}
+
+.proyecto{
+  position: relative;
 }
 
 .proyecto img{
@@ -260,10 +239,6 @@ section {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 0;
-}
-
-.proyecto{
-  position: relative;
 }
 
 .proyecto:hover .overlay{
@@ -338,42 +313,20 @@ section {
   color: #656060;
 }
 
-/* contacto id para el menu */
-#contacto{
-  margin-top: -2em;
-  color: transparent;
-}
-
-/* contacto */
-.contacto .container{
+/* formulario contacto */
+.formulario-contacto{
+  display: none;
+  text-align: center;
   max-width: 1100px;
   min-height: 200px;
   padding: 20px;
 }
 
-.contacto .rectangulo{
-  margin-top: -5rem;
-  background-color: rgb(13,110,253);
-  border-radius: 10px;
-  box-shadow: 0px 1px 4px 1px white;
-}
-
-.contacto .row{
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.contacto .descripcion{
-  color: white;
-  font-size: 1.2rem;
-}
-
-.contacto a{
+.formulario-contacto a{
   text-decoration: none;
 }
 
-.contacto button{
+.formulario-contacto button{
   color: white;
   font-weight: bold;
   background-color: transparent;
@@ -386,27 +339,42 @@ section {
   transition: all 0.2s ease-in-out;
 }
 
-.contacto button i{
+.formulario-contacto button i{
   color: white;
   font-size: 1.3rem;
   padding-left: 0.5rem;
   transition: all 0.2s ease-in-out;
 }
 
-.contacto button:hover{
+.formulario-contacto button:hover{
   background-color: white;
   color: black; 
 }
 
-.contacto button:hover i{
+.formulario-contacto button:hover i{
   color: black;
+}
+
+.formulario-contacto label{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  color: rgb(48, 127, 158);
+  font-size: 1.4em;
+}
+
+#boton-enviar{
+  background-color: rgb(13,110,253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
 }
 
 footer {
   background-color: rgb(155, 216, 216);
+  height: 50px;
+  display: flex;
   align-items: center;
-  align-content: center;
   text-align: center;
+  justify-content: center;
 }
 
 
