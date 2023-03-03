@@ -3,8 +3,8 @@ function ocultar_mostar_datos_iniciales(elementoId){
   // verifico si esta esta visible
   let elemento = document.getElementById(elementoId);
   let esVisible = elemento.style.display;
-  console.log(esVisible);
-  if (esVisible == 'none'){
+  
+  if (esVisible == 'none' || esVisible == ''){
     elemento.style.display = 'block';
   }
   else
