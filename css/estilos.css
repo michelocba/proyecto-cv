@@ -415,6 +415,12 @@ footer {
   footer h3{
     font-size: .5em;
   }
+  #conoceme .seccion-titulo{
+    font-size: .65rem;
+  }
+  #conoceme .seccion-texto{
+    font-size: .8rem;
+  }
 }
 
 @media screen and (min-width: 221px) and (max-width: 250px){
@@ -435,6 +441,12 @@ footer {
   }
   footer h3{
     font-size: .6em;
+  }
+  #conoceme .seccion-titulo{
+    font-size: .85rem;
+  }
+  #conoceme .seccion-texto{
+    font-size: 1rem;
   }
 }
 
@@ -457,6 +469,12 @@ footer {
   footer h3{
     font-size: .7em;
   }
+  #conoceme .seccion-titulo{
+    font-size: 1rem;
+  }
+  #conoceme .seccion-texto{
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 301px) and (max-width: 330px){
@@ -477,6 +495,12 @@ footer {
   }
   footer h3{
     font-size: .8em;
+  }
+  #conoceme .seccion-titulo{
+    font-size: 1.2rem;
+  }
+  #conoceme .seccion-texto{
+    font-size: 1rem;
   }
 }
 
@@ -499,6 +523,12 @@ footer {
   footer h3{
     font-size: .9em;
   }
+  #conoceme .seccion-titulo{
+    font-size: 1.4rem;
+  }
+  #conoceme .seccion-texto{
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 361px) {
@@ -511,7 +541,22 @@ footer {
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 575px) {
+@media screen and (min-width: 361px) and (max-width: 450px) {
+  #conoceme .seccion-titulo{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 499){
+  #datos-iniciales .texto-contacto{
+    padding-left: 5em;
+  }
+}
+
+@media screen and (min-width: 499px) and (max-width: 575px) {
+  #datos-iniciales .texto-contacto{
+    padding-left: 2em;
+  }
   .pl-5em{
     font-size: 18px;
     font-weight: bold;
